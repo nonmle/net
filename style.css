@@ -1,0 +1,300 @@
+/* Reset styles and imports */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: "Futura";
+    src: url("C:/Users/Desktop/Website/fonts/Futuraxk.ttf");
+}
+
+/* Define color variables */
+:root {
+    --main-background: #0F0F0F;
+    --text-color: #f8f9fa;
+    --text-color-transparent: #f8f9fa00;
+    --link-color: #f8f9fa;
+    --link-hover-color: #f8f9fa;
+    --footer-background: #0F0F0F;
+    --footer-text: #f8f9fa;
+    --footer-link: #f8f9fa;
+    --footer-icon: #f8f9fa;
+}
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: var(--text-color);
+    color: var(--main-background);
+}
+
+/* Body styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    cursor: context-menu;
+    scroll-behavior: smooth;
+    background: var(--main-background);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    background: var(--main-background);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Link styles */
+a, div, .main a, .navbar a, .nonmle {
+    text-decoration: none;
+}
+
+/* desktop version */
+
+/* Nonmle class styles */
+.nonmle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-size: 25px;
+    font-family: "Futura";
+    object-fit: cover;
+    border: 0px solid;
+    color: var(--text-color);
+    transition: 1s cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    color: var(--text-color);
+    background: var(--main-background);
+    padding: 50px 0px 0px 0px;
+    z-index: 1;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  color: var(--text-color);
+  background: var(--main-background);
+  padding: 50px 0px 0px 0px;
+  z-index: 1;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  font-size: 24px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 8px;
+}
+
+.navbar a:hover {
+  color: var(--text-color);
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--main-background);
+}
+
+.img-box {
+  background: none;
+}
+
+img {
+  max-width: 700px;
+  max-height: 600px;
+  z-index: 1;
+  margin-left: 150px;
+  margin-top: -150px;
+  filter: grayscale(90%);
+}
+
+.img-p {
+  margin-top: 10px;
+  color: var(--text-color);
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 20px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid var(--text-color-transparent);
+  border-radius: 16px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align items to the end (right) */
+}
+
+.translate-link {
+  cursor: pointer;
+  color: #c8c9cc; /* Slightly darker than #f8f9fa */
+  text-decoration: underline;
+  margin-top: auto; /* Push the link to the bottom */
+  padding: 0 20px;
+  border: 1px solid var(--text-color-transparent);
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.counter-container {
+  color: var(--text-color);
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Prevent scrolling */
+body {
+  overflow: hidden;
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-background);
+  color: var(--text-color);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0px 0px 30px 0px;
+}
+
+/* Footer link styles */
+.footer a {
+  color: var(--text-color);
+  margin: 0 10px;
+  text-decoration: none;
+  border: 0.01px solid transparent;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer paragraph styles */
+.footer p {
+  margin: 0;
+  font-size: 20px;
+  display: inline-block;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+}
+
+/* Footer icon styles */
+.footer i {
+  font-size: 24px;
+  padding: 0px 5px;
+}
+
+/* Footer container styles */
+.footer-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+/* mobile version */
+
+/* mobile version */
+@media only screen and (max-width: 767px) {
+  .navbar {
+      padding-top: 30px; /* Adjust padding for better visibility on mobile */
+      height: auto; /* Set height to auto for mobile */
+  }
+
+  .navbar a {
+      font-size: 24px; /* Adjust font size for mobile */
+  }
+
+  .header {
+      padding-top: 60px; /* Adjust padding for better visibility on mobile */
+  }
+
+  img {
+    max-width: 90%; /* Make images responsive for mobile */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Remove any default inline styling */
+    margin-top: -80px; /* Adjust margin for mobile */
+  }
+
+  .img-p {
+      font-size: 16px; /* Adjust font size for mobile */
+      border-radius: 0; /* Remove border radius for mobile */
+  }
+
+  .translate-link {
+      padding: 0 20px; /* Adjust padding for mobile */
+      font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  .counter-container {
+      font-size: 18px; /* Adjust font size for mobile */
+  }
+
+  .footer {
+      padding: 10px 0 20px; /* Adjust padding for mobile */
+  }
+
+  .footer a {
+      width: 40px; /* Adjust width for mobile */
+      height: 40px; /* Adjust height for mobile */
+  }
+
+  .footer i {
+      font-size: 20px; /* Adjust font size for mobile */
+      padding: 0 3px; /* Adjust padding for mobile */
+  }
+}
