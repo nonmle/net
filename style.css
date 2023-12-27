@@ -146,7 +146,7 @@ img {
   max-height: 600px;
   z-index: 1;
   margin-left: 150px;
-  margin-top: -150px;
+  margin-top: -75px;
   filter: grayscale(90%);
 }
 
@@ -163,6 +163,7 @@ img {
   font-weight: 300;
   border: 1px solid var(--text-color-transparent);
   border-radius: 16px;
+    letter-spacing: -.3px; 
 }
 
 .text-container {
@@ -179,7 +180,8 @@ img {
   padding: 0 20px;
   border: 1px solid var(--text-color-transparent);
   border-radius: 16px;
-  font-size: 12px;
+  font-size: 13px;
+  letter-spacing: -.3px;
 }
 
 .counter-container {
