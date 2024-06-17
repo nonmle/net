@@ -54,7 +54,7 @@
       }
 
       // Visitor count starting from 200
-      let visitCount = parseInt(localStorage.getItem('visitCount')) || 0; // Start from 199 to increment to 200 on the first visit
+      let visitCount = parseInt(localStorage.getItem('visitCount')) || 0;
       document.getElementById('visitor-count').textContent = ++visitCount;
       localStorage.setItem('visitCount', visitCount.toString());
 
